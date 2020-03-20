@@ -1,4 +1,6 @@
-# cows and bulls version 1.1
+#Cows and Bulls version 1.1
+#Made for python3
+
 from random import randint
 
 
