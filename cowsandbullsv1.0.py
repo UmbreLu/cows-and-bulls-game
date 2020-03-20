@@ -1,4 +1,4 @@
-# cows and bulls 2
+# cows and bulls version 1.1
 from random import randint
 
 
@@ -147,8 +147,12 @@ Place a GUESS!!
 guess_string = getguessing()
 
 #create game loop
+loops_count = 0
 not_match = True
 while not_match:
+	
+	#count game loops
+	loops_count += 1
 	
 	#get user guess and refresh pattern
 	hidden = patternrefresher(guess_string)
@@ -165,3 +169,5 @@ while not_match:
 	#if not, then count and print cows and bulls and restart game loop
 	else:
 		cowsbulls(hidden, bet)
+
+print(f'You won the game in {loops_count} tries.')
